@@ -4,6 +4,7 @@ import styles from './layout.module.css';
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -12,10 +13,13 @@ export const metadata = {
 };
 
 export default function RootLayout({title, keywords, description, children}) {
+
+
+
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Header></Header>
+        <Header/>
         <div className={styles.container}>
           {children}
         </div>
